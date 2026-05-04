@@ -3,9 +3,7 @@ import { test, expect } from '@playwright/test';
 test
   ('SEB invalid login flow', async ({ page }) => {
     await page.goto('https://www.seb.ee/');
-
-    // Expect a title "to contain" a substring.
-    await expect(page).toHaveTitle(/SEB/);
+       await expect(page).toHaveTitle(/SEB/);
 
     // Click the get English Language.
     await page.getByRole('link', { name: 'English' }).click();
